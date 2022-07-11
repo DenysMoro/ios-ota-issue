@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import useCachedResources from './hooks/useCachedResources'
 
-export default function App() {
+function App() {
+  const [isLoadingComplete] = useCachedResources()
+
+  if (!isLoadingComplete) return null
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <View style={styles.greenBlock} />
+      <Text>Fresh project v11</Text>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  greenBlock: {
+    backgroundColor: 'green',
+    height: 100,
+    width: 100,
   },
-});
+})
+
+export default App

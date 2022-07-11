@@ -1,0 +1,14 @@
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "releaseChannel": "fresh-internal-1.0.9",
+      "node": "12.16.3",
+      "prebuildCommand": "prebuild --npm",
+      "expoCli": "5.4.12",
+      "cache": {
+        "disabled": true
+      }
+    }
+  }
+}

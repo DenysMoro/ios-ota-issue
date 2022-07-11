@@ -1,33 +1,25 @@
 {
   "expo": {
-    "name": "taranis-connect-fresh",
-    "slug": "taranis-connect-fresh",
-    "version": "1.0.0",
+    "version": "1.0.9",
+    "name": "connect-fresh",
+    "slug": "connect-fresh",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "privacy": "public",
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "enabled": true
     },
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "versionCode": 9
     }
   }
 }
